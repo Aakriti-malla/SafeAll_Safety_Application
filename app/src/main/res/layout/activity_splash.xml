@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="#f4f0bb">
+
+
+    <View
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="-30dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/topleftoval"
+        android:background="@drawable/top_left_corner_oval"/>
+
+    <TextView
+        android:id="@+id/sparkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sparkImg"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="Spark Women"
+        android:textColor="#226f54"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/sparkImg"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:layout_centerInParent="true"
+        android:paddingStart="10dp"
+        android:src="@drawable/splash_image" />
+
+    <TextView
+        android:id="@+id/slang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sparkImg"
+        android:layout_centerHorizontal="true"
+
+        android:text="The Key To Safety Is in Your Hands."
+        android:textColor="#226f54" />
+
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:text="get started"
+        android:backgroundTint="#226F54"/>
+
+
+
+</RelativeLayout>
