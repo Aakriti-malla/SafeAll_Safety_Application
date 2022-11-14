@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
         requestPermission();
         findViewById(R.id.btnGetStarted).setOnClickListener(view -> {
             if(isAllPermissionsGranted){
-                startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                startActivity(new Intent(SplashActivity.this,Login_Screen.class));
                 SplashActivity.this.finish();
             }else {
                 Toast.makeText(this, "Please grant required permissions!", Toast.LENGTH_SHORT).show();
