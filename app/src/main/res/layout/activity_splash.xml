@@ -54,8 +54,8 @@
         android:layout_below="@id/slang"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40px"
-        android:text="get started"
-        android:backgroundTint="#226F54"/>
+        android:backgroundTint="#226F54"
+        android:text="get started" />
 
 
 

@@ -7,9 +7,9 @@
     tools:context=".SelfDefenseActivity">
 
     <View
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/top_left_corner_oval"/>
+        android:layout_width="151dp"
+        android:layout_height="136dp"
+        android:background="@drawable/top_left_corner_oval" />
 
 
 

@@ -20,8 +20,8 @@
 
     <View
         android:id="@+id/topleftoval"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="112dp"
+        android:layout_height="128dp"
         android:background="@drawable/top_left_corner_oval"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

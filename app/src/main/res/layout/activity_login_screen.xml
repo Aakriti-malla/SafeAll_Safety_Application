@@ -4,17 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3c4042"
+    android:background="#f4f0bb"
     tools:context=".Login_Screen">
+
+    <View
+        android:id="@+id/topleftoval"
+        android:layout_width="112dp"
+        android:layout_height="128dp"
+        android:background="@drawable/top_left_corner_oval"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="monospace"
+        android:fontFamily="cursive"
         android:text="Login"
-        android:textColor="#E4D4FF"
-        android:textSize="28sp"
+        android:textColor="#43291f"
+        android:textSize="40sp"
         android:textStyle="bold"
 
         app:layout_constraintBottom_toTopOf="@+id/mEmail"
@@ -70,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Forgot Password?"
-        android:textColor="#FFFFFF"
+        android:textColor="#43291f"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="New user ? Register Here"
-        android:textColor="#FFFFFF"
+        android:textColor="#43291f"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

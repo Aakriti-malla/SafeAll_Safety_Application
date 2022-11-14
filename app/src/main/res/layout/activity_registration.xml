@@ -4,18 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3c4042"
+    android:background="#f4f0bb"
     tools:context=".Registration_Screen">
 
-
+    <View
+        android:id="@+id/topleftoval"
+        android:layout_width="112dp"
+        android:layout_height="128dp"
+        android:background="@drawable/top_left_corner_oval"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="monospace"
+        android:fontFamily="cursive"
         android:text="Registration"
-        android:textColor="#E4D4FF"
-        android:textSize="28sp"
+        android:textColor="#43291f"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +36,7 @@
         android:fontFamily="monospace"
         android:text="Create New Account"
         android:textSize="15sp"
-        android:textColor="#FFFFFF"
+        android:textColor="#43291f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -146,7 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Already Registered ? Login Here"
-        android:textColor="#FFFFFF"
+        android:textColor="#43291f"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
