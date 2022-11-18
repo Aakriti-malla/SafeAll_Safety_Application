@@ -85,9 +85,6 @@ public class Registration_Screen extends AppCompatActivity {
 
             }
         });
-
-
-
          mLoginBtn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {

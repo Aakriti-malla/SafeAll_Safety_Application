@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactActivity">
+    tools:context=".ContactActivity"
+    android:background="#f4f0bb">
 
     <View
         android:layout_width="100dp"
@@ -12,59 +13,59 @@
         android:background="@drawable/top_left_corner_oval"/>
 
     <RelativeLayout
-        android:layout_above="@id/callingInfo"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    <LinearLayout
-        android:id="@+id/topBar"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="50dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Emergency Contacts :"/>
-
-        <TextView
-            android:layout_marginStart="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Police : 100"/>
-
-        <TextView
-            android:layout_marginStart="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ambulance : 101"/>
-
-        <TextView
-            android:layout_marginStart="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fire brigade : 102"/>
-    </LinearLayout>
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/topBar"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="50dp"
-        android:id="@+id/contactText"
-        android:text="Contact to send SOS "/>
+        android:layout_above="@id/callingInfo"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emergency Contacts :" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Police : 100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Ambulance : 101" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Fire brigade : 102" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contactText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topBar"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:text="Contact to send SOS " />
 
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_height="300dp"
             android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/contactText"
             android:layout_marginHorizontal="50dp"
-            android:layout_below="@id/contactText"/>
+            android:layout_marginTop="10dp" />
 
 
     </RelativeLayout>

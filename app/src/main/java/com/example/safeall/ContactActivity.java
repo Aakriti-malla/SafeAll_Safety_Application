@@ -101,8 +101,6 @@ public class ContactActivity extends AppCompatActivity {
         });
 
 
-
-
         callerInfo = findViewById(R.id.callText);
 
 
@@ -164,9 +162,6 @@ public class ContactActivity extends AppCompatActivity {
 
     }
 
-
-
-
     private void deleteItemFromDatabase(int position) {
         SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref",MODE_PRIVATE);
         Set<String> oldNumbers = sharedPreferences.getStringSet("enumbers", new LinkedHashSet<>());
@@ -177,8 +172,6 @@ public class ContactActivity extends AppCompatActivity {
         editor.apply();
         getData();
     }
-
-
 
     private void getData() {
         send.clear();

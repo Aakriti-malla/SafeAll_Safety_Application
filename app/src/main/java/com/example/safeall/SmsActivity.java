@@ -16,11 +16,7 @@ import android.widget.Button;
 import com.google.android.material.snackbar.Snackbar;
 
 public class SmsActivity extends AppCompatActivity {
-
-
-
     Button start,stop;
-
 
     @Override
     public void onBackPressed() {

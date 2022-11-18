@@ -28,9 +28,6 @@ public class Login_Screen extends AppCompatActivity {
     TextView mCreateBtn, forgetTextLink;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
-
-
-
     TextView mNewUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,17 +75,13 @@ public class Login_Screen extends AppCompatActivity {
                             Toast.makeText(Login_Screen.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
                         }
-
                     }
                 });
-
-
             }
         });
 
 
         mNewUser=findViewById(R.id.RegisterBtn);
-
         mNewUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,8 +126,6 @@ public class Login_Screen extends AppCompatActivity {
 
                 passwordResetDialog.create().show();
             }
-
         });
-
     }
 }

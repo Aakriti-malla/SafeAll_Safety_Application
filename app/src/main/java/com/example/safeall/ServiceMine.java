@@ -172,10 +172,7 @@ public class ServiceMine extends Service {
             }
 
         return super.onStartCommand(intent,flags,startId);
-
-
     }
-
     @Override
     public void onDestroy() {
         mediaPlayer.stop();

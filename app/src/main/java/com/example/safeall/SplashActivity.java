@@ -37,15 +37,12 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(new Intent(SplashActivity.this,Login_Screen.class));
                 SplashActivity.this.finish();
             }else {
-                Toast.makeText(this, "Please grant required permissions!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please grant the required permissions!", Toast.LENGTH_SHORT).show();
                 requestPermission();
             }
         });
     }
-
-
     
-
     private void requestPermission() {
         Dexter.withContext(this)
                 .withPermissions(
